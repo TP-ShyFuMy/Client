@@ -12,11 +12,10 @@ namespace TPShyFuMyClient.Modeles
         /// <summary>
         /// Constructeur de papier
         /// </summary>
-        /// <param name="moveName">Nom du mouvement effectue par la main</param>
         #region Constructors
-        public Paper(string moveName)
+        public Paper()
         {
-            HandMove = moveName;
+            HandMove = "Papier";
         }
         #endregion
     }

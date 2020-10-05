@@ -13,11 +13,10 @@ namespace TPShyFuMyClient.Modeles
         /// <summary>
         /// Constructeur de ciseaux
         /// </summary>
-        /// <param name="moveName">Nom du mouvement effectue par la main</param>
         #region Constructors
-        public Scissors(string moveName)
+        public Scissors()
         {
-            HandMove = moveName;
+            HandMove = "Ciseaux";
         }
         #endregion
     }
