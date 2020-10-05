@@ -9,10 +9,14 @@ namespace TPShyFuMyClient.Modeles
     /// </summary>
     public class Rock : Hand
     {
+        /// <summary>
+        /// Constructeur de pierre
+        /// </summary>
+        /// <param name="moveName">Nom du mouvement effectue par la main</param>
         #region Constructors
-        public Rock()
+        public Rock(string moveName)
         {
-
+            HandMove = moveName;
         }
         #endregion
     }

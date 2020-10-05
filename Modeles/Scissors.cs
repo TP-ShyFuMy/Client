@@ -9,10 +9,15 @@ namespace TPShyFuMyClient.Modeles
     /// </summary>
     public class Scissors : Hand
     {
-        #region Cosntructors
-        public Scissors()
-        {
 
+        /// <summary>
+        /// Constructeur de ciseaux
+        /// </summary>
+        /// <param name="moveName">Nom du mouvement effectue par la main</param>
+        #region Constructors
+        public Scissors(string moveName)
+        {
+            HandMove = moveName;
         }
         #endregion
     }
