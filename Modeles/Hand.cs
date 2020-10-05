@@ -9,6 +9,9 @@ namespace TPShyFuMyClient
     /// </summary>
     public abstract class Hand
     {
+        /// <summary>
+        /// Geste de la main
+        /// </summary>
         #region Attributes
         private string HandMove;
         #endregion
