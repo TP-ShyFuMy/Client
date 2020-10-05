@@ -17,20 +17,48 @@ namespace TPShyFuMyClient
             user.userName = userName;
             Console.Clear();
         }
-        static void ChoiceHand(User user)
+        /// <summary>
+        /// Menu de choix de l'action
+        /// </summary>
+        /// <param name="user"></param>
+        static void MenuChoiceHand(User user)
         {
             Console.WriteLine(user.userName+", choisissez votre mouvement :");
             Console.WriteLine(" Papier -> 1");
             Console.WriteLine(" Pierre -> 2");
             Console.WriteLine(" Ciseaux -> 3");
         }
+        /// <summary>
+        /// Choix du joueur
+        /// </summary>
+        /// <returns>string choice</returns>
+        static string Choice()
+        {
+            string choice = "";
+            switch (Console.ReadLine())
+            {
+                case "1":
+                    Paper paper = new Paper();
+                    choice = paper.HandMove;
+                    break;
+                case "2":
+                    Rock rock = new Rock();
+                    choice = rock.HandMove;
+                    break;
+                case "3":
+                    Scissors scissors = new Scissors();
+                    choice = scissors.HandMove;
+                    break;
+            }
+            return choice;
+        }
         static void Main(string[] args)
         {
             User user = new User();
             ChooseUsername(user);
-            ChoiceHand(user);
+            MenuChoiceHand(user);
+            Console.WriteLine(Choice());
             Console.ReadLine();
-
         }
     }
 }
