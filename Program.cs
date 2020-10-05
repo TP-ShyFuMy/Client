@@ -20,9 +20,9 @@ namespace TPShyFuMyClient
         static void ChoiceHand(User user)
         {
             Console.WriteLine(user.userName+" choisissez mouvement :");
-            Console.WriteLine(" Papier-> p");
-            Console.WriteLine(" Pierre-> r");
-            Console.WriteLine(" Ciseaux-> s");
+            Console.WriteLine(" Papier-> 1");
+            Console.WriteLine(" Pierre-> 2");
+            Console.WriteLine(" Ciseaux-> 3");
         }
         static void Main(string[] args)
         {
